@@ -48,7 +48,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.Container = new System.Windows.Forms.Panel();
             this.logomenu = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panelanimation = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1.SuspendLayout();
@@ -416,15 +416,15 @@
             this.bunifuDragControl2.TargetControl = this.Header;
             this.bunifuDragControl2.Vertical = true;
             // 
-            // panel2
+            // Container
             // 
-            this.panelanimation.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.logomenu.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(56, 58);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(646, 484);
-            this.panel2.TabIndex = 2;
+            this.panelanimation.SetDecoration(this.Container, BunifuAnimatorNS.DecorationType.None);
+            this.logomenu.SetDecoration(this.Container, BunifuAnimatorNS.DecorationType.None);
+            this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Container.Location = new System.Drawing.Point(56, 58);
+            this.Container.Name = "Container";
+            this.Container.Size = new System.Drawing.Size(646, 484);
+            this.Container.TabIndex = 2;
             // 
             // logomenu
             // 
@@ -475,7 +475,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(702, 542);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.Container);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Header);
             this.logomenu.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -515,7 +515,7 @@
         private System.Windows.Forms.PictureBox Logo;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel Container;
         private BunifuAnimatorNS.BunifuTransition panelanimation;
         private BunifuAnimatorNS.BunifuTransition logomenu;
     }

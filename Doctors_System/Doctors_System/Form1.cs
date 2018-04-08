@@ -21,6 +21,21 @@ namespace Doctors_System
         {
 
         }
+
+        private void Father_Container(object FatherConainer)
+        {
+            /*El if es para saber si existe algun control en el panel principa y eliminar lo si es True */
+            if(this.Container.Controls.Count>0)
+            {
+                this.Container.Controls.RemoveAt(0);
+                Form Fc = FatherConainer as Form;
+                Fc.TopLevel = false;
+                Fc.Dock = DockStyle.Fill;
+                this.Container.Controls.Add(Fc);
+                this.Container.Tag = Fc;
+                Fc.Show();
+            }
+        }
         private void bunifuImageButton2_Click_1(object sender, EventArgs e)
         {
             this.Close();
