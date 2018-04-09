@@ -81,5 +81,10 @@ namespace Doctors_System
         {
             this.Close();
         }
+
+        private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
