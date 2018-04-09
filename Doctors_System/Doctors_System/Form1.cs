@@ -38,6 +38,7 @@ namespace Doctors_System
         }
         private void bunifuImageButton2_Click_1(object sender, EventArgs e)
         {
+         
             this.Close();
         }
 
@@ -78,6 +79,12 @@ namespace Doctors_System
 
             }
 
+        }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+
+           this.WindowState = FormWindowState.Minimized;
         }
     }
 }
