@@ -56,17 +56,17 @@ namespace Doctors_System
 
             cuenta = "Chayannesuazo";
             contra = "1234";
-            if (bunifuMetroTextbox1.Text == cuenta || bunifuMetroTextbox1.Text == correo && bunifuMetroTextbox2.Text == contra)
+            if (bunifuMetroTextbox3.Text == cuenta || bunifuMetroTextbox3.Text == correo && bunifuMetroTextbox4.Text == contra)
             {
                 Form1 mp = new Form1();
                 mp.Show();
                 this.Hide();
             }
-            if (bunifuMetroTextbox1.Text != cuenta || bunifuMetroTextbox1.Text != correo && bunifuMetroTextbox2.Text != contra)
+            if (bunifuMetroTextbox3.Text != cuenta || bunifuMetroTextbox3.Text != correo && bunifuMetroTextbox4.Text != contra)
             {
                 MessageBox.Show("El usuario, Correo o contraseña son incorrectos");
             }
-           if (bunifuMetroTextbox1.Text == "" || bunifuMetroTextbox1.Text == "" && bunifuMetroTextbox2.Text == "")
+           if (bunifuMetroTextbox3.Text == "" || bunifuMetroTextbox3.Text == "" && bunifuMetroTextbox4.Text == "")
 
 
                     {
@@ -85,6 +85,21 @@ namespace Doctors_System
         private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
